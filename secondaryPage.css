@@ -1,0 +1,397 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+body{
+    background: #121213;
+    color: white;
+    /* overflow: hidden; */
+}
+
+/* this is the navigation bar section  */
+
+body .navigation-barr{
+    z-index: 7 !important;
+
+}
+.nav-barr{
+    display: flex;
+    justify-content: space-between;
+}
+.left-side-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    /* border: 1px solid red; */
+    color: aliceblue;
+}
+p{
+    margin-bottom: 0px ;
+    /* align-items: center; */
+}
+
+.nav-left{
+    
+    display: flex;
+    align-items: center;
+}
+.nav-left i{
+    /* border: 1px solid blue; */
+    padding-bottom:0 ;
+    font-size: 2.5rem;
+}
+.nav-left h3{
+    font-size: 1.4rem;
+    margin-bottom: 0;
+    margin-left: 9px;
+}
+.right-side-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    color: white;
+    /* border: 1px solid blue; */
+}
+.search-br{
+    width: 300px;
+    display: flex;
+    /* position: absolute; */
+    justify-content: space-between;
+    background: lightgray;
+    border-radius: 20px;
+    /* background: rgb(184, 184, 184, .1); */ 
+}
+.search-br input{
+    background: none;
+    color: white;
+    border: none;
+    outline: none;
+}
+.right-side-nav .user{
+    border: 1px solid yellow;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.right-side-nav .user img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+@media screen and (max-width: 970px){
+    /* .nav-left2 p{
+        display: none !important;
+    } */
+    .left-side-nav{
+        width:20%;
+    }
+    .nav-barr .nav-left2 p{
+        width: 0px;
+        /* min-width: 70px; */
+        /* border: 1px solid green; */
+        display: none;
+    }
+    .nav-barr{
+        /* width: 0px; */
+        display: flex;
+        /* justify-content: start; */
+        /* justify-content:start; */
+        /* visibility: collapse; */
+    }
+    .right-side-nav{
+        width: 65%;
+        margin-left: 10px;
+    }
+    
+}
+@media screen and (max-width: 780px){
+    .nav-left h3{
+        font-size: 17px;
+        min-width: fit-content;
+    }
+    .main-section .latest-release-section .song-cardd .song-detail h5{
+        font-size: 11px;
+        
+    }
+}
+
+
+/* the main section starts here  */
+.mainsection{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    height: 87vh;
+    background: #0D102A;
+}
+
+
+
+/* left side song profile startss here  */
+.song-profile{
+    width: 95%;
+    /* height: 100px; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* border: 1px solid salmon; */
+    margin: auto;
+    background: #131C44;
+}
+.back-color{
+    background: #131C44;
+}
+.song-image{
+    width: 16vw;
+    height: 18vw;
+    min-width: 180px;
+    min-height: 200px;
+    /* border: 1px solid brown; */
+    box-shadow: 1px 1px 10px 1px rgb(158, 154, 158);
+    
+}
+.song-profile .song-image img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 20px inset;
+} 
+
+.song-detail{
+    width: 60%;
+    /* width: 28vw;
+    min-width: 350px;
+    min-height: 300px; */
+
+}
+.song-detail h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.song-detail h3 .subtitle{
+    color: gray;
+}
+.song-detail p{
+    font-size: 14px;
+    text-align: justify;
+    color: rgb(189, 187, 187);
+}
+.play-button .play{
+    width: 90px;
+    border: none;
+    border-radius: 1px;
+    background: linear-gradient(90deg, #3C2FB7, #C95AE3);
+    outline: none;
+}
+.play-button .follow{
+    width: 90px;
+    border: none;
+    border-radius: 1px;
+    border: 1px solid linear-gradient(90deg, #ececf1, #c49bce);
+    outline: none;
+}
+
+@media screen and (max-width: 1100px){
+    
+    /* .song-image{
+        width: 40%;
+       
+        height: 40vw;
+        min-width: 12vw;
+        border: 1px solid brown;
+    } */
+   
+}
+
+/* this is similar artist section  */
+
+.first-row-all-section{
+    height: 380px;
+    /* overflow: hidden; */
+}
+.first-row-all-section2{
+    height: 420px;
+    /* overflow: hidden; */
+}
+.similar-artist-heading h5{
+    cursor: pointer;
+}
+.similar-artist-heading p{
+    cursor: pointer;
+}
+.left-sec .imgg{
+    /* border: 1px solid green; */
+    width: 80px;
+    height: 80px;
+}
+.left-sec .imgg img{
+    width: 100%;
+    height: 100%;
+}
+.left-sec h5{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.left-sec h5 span{
+    cursor: pointer;
+    font-size: 13px;
+    color: grey;
+
+}
+.right-sec h5 i{
+    font-size: 20px;
+}
+.right-sec h5 span{
+    font-size: 11px;
+    color: grey;
+    cursor: pointer;
+    /* padding-right: 5px; */
+
+}
+
+.outer-box{
+   
+}
+.similar-artist-content{
+    height: 75%;
+    overflow: scroll;
+}
+
+
+li{
+    list-style-type: none;
+}
+.similar-artist-content{
+    height: 85%;
+    overflow: scroll;
+}
+.similar-artist-content::-webkit-scrollbar{
+    display: none;
+}
+
+.similar-artist-content li:hover{
+    border: 1px solid skyblue;
+}
+
+.font-bada{
+    font-size: 26px !important;
+    padding-right: 2px;
+}
+
+@media screen and (max-width: 767px){
+   .outer-box{
+    display: none;
+   }
+}
+
+
+
+
+/* the footer section starts here  */
+
+.footer-section{
+    /* position: absolute; */
+    position: fixed;
+    width: 90%;
+    height: 8vh;
+    left:5%;
+    margin: auto;
+    /* border: 1px solid rosybrown; */
+    z-index: 4;
+    background-color: #282828;
+}
+
+.immg{
+    width: 70px;
+    height: 70px;
+}
+.immg img{
+    width: 100%;
+    height: 100%;
+}
+
+.leftt{
+    width: 16%;
+}
+.songPoster p{
+    font-size: 14px;
+    color: cadetblue;
+}
+.allPlaylistIcons {
+    /* width: 35%; */
+    margin-bottom: 4px;
+
+    /* border: 1px solid green; */
+}
+.middle{
+    width: 40%;
+}
+.allPlaylistIcons i{
+    /* width: 35%; */
+    margin-right: 3vw;
+}
+.songbar span:nth-child(1){
+    margin-right: 2vw;
+    font-size: 12px;
+    color: darkgray;
+}
+.songbar .secondspan{
+    margin-left: 2vw;
+    font-size: 12px;
+    color: darkgray;
+}
+.right{
+    width: 20%;
+}
+.right .volumebar{
+    width: 50%;
+}
+.right .volumebar input{
+    width: 80%;
+}
+
+.right i{
+    font-size: 13px;
+}
+@media screen and (max-width: 768px){
+    .leftt .heartIcons{
+        display: none !important;
+        /* visibility: hidden; */
+    }
+    .right{
+        width: 30%;
+    }
+   
+}
+
+@media screen and (max-width: 1300px){
+    /* .songimg{
+        width: 70px;
+        height: 70px;
+        border: 1px solid burlywood;
+    }
+    .lft-side h5{
+        font-size: 1.6vw;
+       
+    } */
+    .non{
+        display: none;
+    }
+    .right .volumebar{
+        width: 80%;
+        /* border: 1px solid greenyellow; */
+    }
+    .right .volumebar input{
+        width: 80%;
+    }
+    .middle{
+        width: 45%;
+        margin-left: 20px;
+    }
+    
+}

@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale= 1"> -->
+    <title>CN Assignment</title>
+
+    <!-- this is boostrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- this is a boostrap icon cdn link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- this is the font awesome link for logos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="navigation-barr position-sticky top-0 mt-1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col nav-barr">
+                    <div class="left-side-nav">
+
+                        <div class="nav-left">
+                            <i class="fa-brands fa-spotify" style="color: #149004;"></i>
+                            <h3>Kaif Mulla</h3>
+                        </div>
+                        <div class="nav-left2">
+                            <p>Favourite</p>
+                        </div>
+                    </div>
+
+                    <div class="right-side-nav">
+                        <div class="search-br ps-2 pe-2">
+                            <i class="bi bi-search"></i>
+                            <input type="text" placeholder="search music...">
+                            <i class="bi bi-mic-fill"></i>
+                        </div>
+                        <div class="notification-icon">
+                            <i class="bi bi-bell-fill"></i>
+                        </div>
+                        <div class="user">
+                            <img src="images/profile-img.jpg" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main-section mt-2">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+
+                <!-- this is the left side section of the main page -->
+                <div class="col-md-8 left-song-side h-100">
+                    <aside class="left-aside-section">
+                        <div class="container-fluid ps-2 pe-2">
+                            <div class="row mb-5">
+                                <!-- this is for main images section  -->
+                                <div class="col-12">
+                                    <div class="three-Images">
+                                        <div class="images">
+                                            <img src="images/disco-club.jpg" alt="">
+                                        </div>
+                                        <div class="images">
+                                            <img src="images/happy-hour.jpg" alt="">
+                                        </div>
+                                        <div class="images">
+                                            <img src="images/Lofi-img.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                               
+                                    <!-- this is for latest release section  -->
+                                <div class="col-12">
+                                    <h4>Latest Release</h4>
+                                    <div class="latest-release-section">
+                                        <div class="song-cardd ">
+                                            <div class="song-cardd-lft">
+                                                <div class="song-img position-relative">
+                                                    <div class="position-absolute play-bttn">
+                                                        <i class="bi bi-play-fill"></i>
+                                                    </div>
+                                                    <img src="images/Latest-Release/Pain(RyanJones).jpg" alt="">
+                                                </div>
+    
+                                                <div class="song-detail ms-3">
+                                                    <h5>Pain<br>
+                                                        <div><p>AUG 11, 2017</p></div>
+                                                    </h5>
+                                                </div>
+                                            </div>
+
+                                            <div class="song-cardd-rt">
+                                                <div class="three-dot" onclick="fun()">
+                                                    <i class="bi bi-three-dots"></i>
+                                                </div>
+                                                <div class="frame1" id="frame1">
+                                                   
+                                                    <div class="info"><a href="SecondaryPage.html"><span> Play Now</span></a></div>
+                                                    <div class="info"><span>Add to Queue</span></div>
+                                                    <div class="info"><span>Add to Playlist</span></div>
+                                                    <div class="info"><span>Like</span></div>
+                                                    <div class="info" onclick="remove()"><span>Exit</span></div>
+                                                </div>
+                                                <div class="songtime">
+                                                    <p>4.15</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+
+
+                                        <div class="song-cardd ">
+                                            <div class="song-cardd-lft">
+                                                <div class="song-img position-relative">
+                                                    <div class="position-absolute play-bttn">
+                                                        <i class="bi bi-play-fill"></i>
+                                                    </div>
+                                                    <img src="images/onim-song.jpg" alt="">
+                                                </div>
+    
+                                                <div class="song-detail ms-3">
+                                                    <h5>Onism <br>
+                                                        <div><p>AUG 11, 2017</p></div>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="song-cardd-rt">
+                                                <div class="three-dot">
+                                                    <i class="bi bi-three-dots"></i>
+                                                </div>
+                                                <div class="songtime">
+                                                    <p>4.15</p>
+                                                </div>
+                                            </div>
+                                        </div>            
+                                    </div>
+
+
+                                    <div class="latest-release-section mt-3">
+                                        <div class="song-cardd ">
+                                            <div class="song-cardd-lft">
+                                                <div class="song-img position-relative">
+                                                    <div class="position-absolute play-bttn">
+                                                        <i class="bi bi-play-fill"></i>
+                                                    </div>
+                                                    <img src="images/Latest-Release/Heatin-Up(Chidi-Eze).webp" alt="">
+                                                </div>
+    
+                                                <div class="song-detail ms-3">
+                                                    <h5>Heatin Up<br>
+                                                        <div><p>AUG 11, 2017</p></div>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="song-cardd-rt">
+                                                <div class="three-dot">
+                                                    <i class="bi bi-three-dots"></i>
+                                                </div>
+                                                <div class="songtime">
+                                                    <p>4.15</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="song-cardd ">
+                                            <div class="song-cardd-lft">
+                                                <div class="song-img position-relative">
+                                                    <div class="position-absolute play-bttn">
+                                                        <i class="bi bi-play-fill"></i>
+                                                    </div>
+                                                    <img src="images/Latest-Release/Mr-Right(BeastNoi).jpg" alt="">
+                                                </div>
+    
+                                                <div class="song-detail ms-3">
+                                                    <h5>Mr Right<br>
+                                                        <div><p>AUG 11, 2017</p></div>
+                                                    </h5>
+                                                </div>
+                                            </div>
+
+                                            <div class="song-cardd-rt">
+                                                <div class="three-dot">
+                                                    <i class="bi bi-three-dots"></i>
+                                                </div>
+                                                <div class="songtime">
+                                                    <p>4.15</p>
+                                                </div>
+                                            </div>                                           
+                                        </div>                                    
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row mt-5">
+
+                                <!-- this is for popular artist section  -->
+                                <div class="col-12">
+                                    <h4>Popular Artist</h4>
+                                    <div class="popular-artist-section d-flex justify-content-between ">
+
+                                        <div class="artist-card ">
+                                            <div class="artist-img">
+                                                <img src="images/ed-shereen-img.jpg" alt="">
+                                            </div>
+                                            <div class="artist-detail">
+                                                <p>Ed-Shereen</p>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="artist-card ">
+                                            <div class="artist-img">
+                                                <img src="images/coldplay-img.jpg" alt="">
+                                            </div>
+                                            <div class="artist-detail">
+                                                <p>Cold Play</p>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="artist-card ">
+                                            <div class="artist-img">
+                                                <img src="images/charlieputh-img.jpg" alt="">
+                                            </div>
+                                            <div class="artist-detail">
+                                                <p>Charlie Puth</p>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="artist-card ">
+                                            <div class="artist-img">
+                                                <img src="images/zyan-img.jpg" alt="">
+                                            </div>
+                                            <div class="artist-detail">
+                                                <p>Zyan</p>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="artist-card ">
+                                            <div class="artist-img">
+                                                <img src="images/brunomars-img.jpg" alt="">
+                                            </div>
+                                            <div class="artist-detail">
+                                                <p>Bruno Mars</p>
+                                                
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+    
+                                </div>
+
+                            </div>
+
+
+                            <div class="row mt-5">
+                                <!-- this is for Moods Section -->
+                                <div class="col-12">
+
+                                    <div class="moods-section d-flex w-90 align-items-center justify-content-between mx-auto position-relative">
+                                        <div class="stations">
+                                            <div id="div1">
+                                                <div id="div2">
+                                                    <div id="div3">
+                                                        <img src="media/website_logo.png">
+                                                        <p>Stations</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mood-cards d-flex justify-content-center align-items-center">
+                                            <p class="position-absolute">Rock</p>
+                                            <div class="mood-img">
+                                                <img src="images/rock.jpg" alt="">
+                        
+                                            </div>
+                                        </div>
+
+                                        <div class="mood-cards d-flex justify-content-center align-items-center">
+                                            <p class="position-absolute">Pop</p>
+                                            <div class="mood-img">
+                                                <img src="images/pop.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="mood-cards d-flex justify-content-center align-items-center">
+                                            <p class="position-absolute">Love</p>
+                                            <div class="mood-img">
+                                                <img src="images/love.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="mood-cards d-flex justify-content-center align-items-center">
+                                            <p class="position-absolute">Retro</p>
+                                            <div class="mood-img">
+                                                <img src="images/retro.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="mood-cards d-flex justify-content-center align-items-center">
+                                            <p class="position-absolute">Chill</p>
+                                            <div class="mood-img">
+                                                <img src="images/chill.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                    </div>
+    
+                                </div>
+
+                            </div>
+
+                            <div class="row mt-5">
+                                <!-- this is for three image section  -->
+                                <div class="col-12">
+                                    <div class="three-img-section justify-content-center d-flex">
+
+                                        <div class="first-img-section m-1 d-flex justify-content-center align-items-center position-relative">
+                                            <p class="position-absolute">Party</p>
+                                            <div class="actual-img w-100 h-100">
+                                                <img src="images/party.jpg" alt="">
+
+                                            </div>
+                                        </div>
+                                        <div class="first-img-section m-1 d-flex justify-content-center align-items-center position-relative">
+                                            <p class="position-absolute">Electronic</p>
+                                            <div class="actual-img w-100 h-100">
+                                                <img src="images/electronic.jpg" alt="">
+
+                                            </div>
+                                        </div>
+                                        <div class="first-img-section m-1 d-flex justify-content-center align-items-center position-relative">
+                                            <p class="position-absolute">Travel</p>
+                                            <div class="actual-img w-100 h-100">
+                                                <img src="images/road.jpg" alt="">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+
+                            <div class="row mt-5">
+                                <!-- this is for latest English section  -->
+                                <div class="col-12 mb-5">
+                                    <h4>Latest English</h4>
+                                    <div class="latest-english-section w-100 d-flex justify-content-between">
+
+                                        <div class="eng-card ">
+                                            <div class="eng-img">
+                                                <img src="images/Latest-English/I'll Wait.jpg" alt="">
+                                            </div>
+                                            <div class="eng-detail">
+                                                <p>I'll Wait</p>
+                                                <p class="subtitle">Aug 11, 2017</p>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="eng-card ">
+                                            <div class="eng-img">
+                                                <img src="images/Latest-English/let me go.jpg" alt="">
+                                            </div>
+                                            <div class="eng-detail">
+                                                <p>Let me go</p>
+                                                <p class="subtitle">Aug 11, 2017</p>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="eng-card  ">
+                                            <div class="eng-img ">
+                                                <img src="images/Latest-English/roar.jpg" alt="">
+                                            </div>
+                                            <div class="eng-detail">
+                                                <p>Roar</p>
+                                                <p class="subtitle">Aug 11, 2017</p>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="eng-card  ">
+                                            <div class="eng-img ">
+                                                <img src="images/Latest-English/qurantine clean.jpg" alt="">
+                                            </div>
+                                            <div class="eng-detail">
+                                                <p>Quarantine-Clean</p>
+                                                <p class="subtitle">Aug 11, 2017</p>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="eng-card ">
+                                            <div class="eng-img">
+                                                <img src="images/Latest-English/uptown funk.png" alt="">
+                                            </div>
+                                            <div class="eng-detail">
+                                                <p>Uptown Funk</p>
+                                                <p class="subtitle">Aug 11, 2017</p>
+                                                
+                                            </div>
+                                        </div>
+
+                                    </div>
+    
+                                </div>
+
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-md-4 playlist-queue h-100">
+                    <div class="playlist-heading w-100 d-flex justify-content-between">
+                        <div class="heading-title ms-2">
+                            <h4>Playlist</h4>
+                        </div>
+                        <div class="heading-dropdown d-flex pe-2">
+                            <div class="para">
+                                <p class="d-inine-block">Queue</p>
+                            </div>
+                            <div class="carlet-icon ms-3" onclick="queueDrop()">
+                                <i class="bi bi-caret-down-fill"></i>
+                            </div>
+                            <div class="queueframe" id="queueframe">
+                                <div class="info"><span>Play Now</span></div>
+                                <div class="info"><span>Add to Queue</span></div>
+                                <div class="info"><span>Add to Playlist</span></div>
+                                <div class="info"><span>Like</span></div>
+                                <div class="info" onclick="removedrop()"><span>Exit</span></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="allSongs">
+                        <li class="d-flex  justify-content-between align-items-center ps-1 pe-2 mb-3">
+                            <div class="lft-side d-flex align-items-center">
+                                <span class="me-3">01</span>
+                                <div class="songimg me-3 ">
+                                    <img src="images/Playlist/alone.jpg" alt="">
+                                </div>
+                                <h5>Alone <br>
+                                    <div>
+                                        <p>Alan Walker</p>
+                                    </div>
+                                </h5>
+                            </div>
+                            <div class="rt-side pe-1 ">
+                                <i class="bi bi-heart"></i>
+                            </div>
+
+                        </li>
+                        <li class="d-flex  justify-content-between align-items-center ps-1 pe-2 mb-3">
+                            <div class="lft-side d-flex align-items-center">
+                                <span class="me-3">01</span>
+                                <div class="songimg me-3 ">
+                                    <img src="images/Playlist/psyco(postmalone).jpg" alt="">
+                                </div>
+                                <h5>Psyco <br>
+                                    <div>
+                                        <p>Post Malones</p>
+                                    </div>
+                                </h5>
+                            </div>
+                            <div class="rt-side pe-1">
+                                <i class="bi bi-heart"></i>
+                            </div>
+
+                        </li>
+                        <li class="d-flex  justify-content-between align-items-center ps-1 pe-2 mb-3">
+                            <div class="lft-side d-flex align-items-center">
+                                <span class="me-3">01</span>
+                                <div class="songimg me-3 ">
+                                    <img src="images/Playlist/white-laverson(postmalone).jpg" alt="">
+                                </div>
+                                <h5>White-Laverson<br>
+                                    <div>
+                                        <p>Post Malone</p>
+                                    </div>
+                                </h5>
+                            </div>
+                            <div class="rt-side pe-1">
+                                <i class="bi bi-heart"></i>
+                            </div>
+
+                        </li>
+
+                        <li class="d-flex  justify-content-between align-items-center ps-1 pe-2 mb-3">
+                            <div class="lft-side d-flex align-items-center">
+                                <span class="me-3">01</span>
+                                <div class="songimg me-3 ">
+                                    <img src="images/Playlist/dynamite.jpg" alt="">
+                                </div>
+                                <h5>Dynamite<br>
+                                    <div>
+                                        <p>Tiao Cruz</p>
+                                    </div>
+                                </h5>
+                            </div>
+                            <div class="rt-side pe-1">
+                                <i class="bi bi-heart"></i>
+                            </div>
+
+                        </li>
+
+                        <li class="d-flex  justify-content-between align-items-center ps-1 pe-2 mb-3">
+                            <div class="lft-side d-flex align-items-center">
+                                <span class="me-3">01</span>
+                                <div class="songimg me-3 ">
+                                    <img src="images/Playlist/falling.jpg" alt="">
+                                </div>
+                                <h5>Falling<br>
+                                    <div>
+                                        <p>Traveor Daniel</p>
+                                    </div>
+                                </h5>
+                            </div>
+                            <div class="rt-side pe-1">
+                                <i class="bi bi-heart"></i>
+                            </div>
+
+                        </li>
+
+                        <li class="d-flex  justify-content-between align-items-center ps-1 pe-2 mb-3">
+                            <div class="lft-side d-flex align-items-center">
+                                <span class="me-3">01</span>
+                                <div class="songimg me-3 ">
+                                    <img src="images/Playlist/DaBaby.jpg" alt="">
+                                </div>
+                                <h5>DaBaby<br>
+                                    <div>
+                                        <p>Shake Sumn</p>
+                                    </div>
+                                </h5>
+                            </div>
+                            <div class="rt-side pe-1">
+                                <i class="bi bi-heart"></i>
+                            </div>
+
+                        </li>
+
+                        <li class="d-flex  justify-content-between align-items-center ps-1 pe-2 mb-3">
+                            <div class="lft-side d-flex align-items-center">
+                                <span class="me-3">01</span>
+                                <div class="songimg me-3 ">
+                                    <img src="images/Playlist/shit.png" alt="">
+                                </div>
+                                <h5>Shit <br>
+                                    <div>
+                                        <p>Tate McRae</p>
+                                    </div>
+                                </h5>
+                            </div>
+                            <div class="rt-side pe-1">
+                                <i class="bi bi-heart"></i>
+                            </div>
+
+                        </li>
+
+                        <li class="d-flex  justify-content-between align-items-center ps-1 pe-2 mb-3">
+                            <div class="lft-side d-flex align-items-center">
+                                <span class="me-3">01</span>
+                                <div class="songimg me-3 ">
+                                    <img src="images/Playlist/havana.jpg" alt="">
+                                </div>
+                                <h5>Havana<br>
+                                    <div>
+                                        <p>Camila Cabello</p>
+                                    </div>
+                                </h5>
+                            </div>
+                            <div class="rt-side pe-1">
+                                <i class="bi bi-heart"></i>
+                            </div>
+
+                        </li>
+
+                        <li class="d-flex  justify-content-between align-items-center ps-1 pe-2 mb-3">
+                            <div class="lft-side d-flex align-items-center">
+                                <span class="me-3">01</span>
+                                <div class="songimg me-3 ">
+                                    <img src="images/Playlist/sorry.jpg" alt="">
+                                </div>
+                                <h5>Sorry<br>
+                                    <div>
+                                        <p>Justin Beiber</p>
+                                    </div>
+                                </h5>
+                            </div>
+                            <div class="rt-side pe-1">
+                                <i class="bi bi-heart"></i>
+                            </div>
+
+                        </li>
+
+                        <li class="d-flex  justify-content-between align-items-center ps-1 pe-2 mb-3">
+                            <div class="lft-side d-flex align-items-center">
+                                <span class="me-3">01</span>
+                                <div class="songimg me-3 ">
+                                    <img src="images/Playlist/Weeknd.jpg" alt="">
+                                </div>
+                                <h5>Weekend<br>
+                                    <div>
+                                        <p>Abel Tesfaye</p>
+                                    </div>
+                                </h5>
+                            </div>
+                            <div class="rt-side pe-1">
+                                <i class="bi bi-heart"></i>
+                            </div>
+
+                        </li>
+
+                        <li class="d-flex  justify-content-between align-items-center ps-1 pe-2 mb-3">
+                            <div class="lft-side d-flex align-items-center">
+                                <span class="me-3">01</span>
+                                <div class="songimg me-3 ">
+                                    <img src="images/Playlist/shit.png" alt="">
+                                </div>
+                                <h5>Shit <br>
+                                    <div>
+                                        <p>Tate McRae</p>
+                                    </div>
+                                </h5>
+                            </div>
+                            <div class="rt-side pe-1">
+                                <i class="bi bi-heart"></i>
+                            </div>
+
+                        </li>
+
+                        <li class="d-flex  justify-content-between align-items-center ps-1 pe-2 mb-3">
+                            <div class="lft-side d-flex align-items-center">
+                                <span class="me-3">01</span>
+                                <div class="songimg me-3 ">
+                                    <img src="images/Playlist/DaBaby.jpg" alt="">
+                                </div>
+                                <h5>DaBaby<br>
+                                    <div>
+                                        <p>Shake Sumn</p>
+                                    </div>
+                                </h5>
+                            </div>
+                            <div class="rt-side pe-1">
+                                <i class="bi bi-heart"></i>
+                            </div>
+
+                        </li>
+
+                        <li class="d-flex  justify-content-between align-items-center ps-1 pe-2 mb-3">
+                            <div class="lft-side d-flex align-items-center">
+                                <span class="me-3">01</span>
+                                <div class="songimg me-3 ">
+                                    <img src="images/Playlist/sorry.jpg" alt="">
+                                </div>
+                                <h5>Sorry<br>
+                                    <div>
+                                        <p>Justin Beiber</p>
+                                    </div>
+                                </h5>
+                            </div>
+                            <div class="rt-side pe-1">
+                                <i class="bi bi-heart"></i>
+                            </div>
+
+                        </li>
+
+                        <li class="d-flex  justify-content-between align-items-center ps-1 pe-2 mb-3">
+                            <div class="lft-side d-flex align-items-center">
+                                <span class="me-3">01</span>
+                                <div class="songimg me-3 ">
+                                    <img src="images/Playlist/falling.jpg" alt="">
+                                </div>
+                                <h5>Falling<br>
+                                    <div>
+                                        <p>Traveor Daniel</p>
+                                    </div>
+                                </h5>
+                            </div>
+                            <div class="rt-side pe-1">
+                                <i class="bi bi-heart"></i>
+                            </div>
+
+                        </li>
+
+                        <li class="d-flex  justify-content-between align-items-center ps-1 pe-2 mb-3">
+                            <div class="lft-side d-flex align-items-center">
+                                <span class="me-3">01</span>
+                                <div class="songimg me-3 ">
+                                    <img src="images/Playlist/alone.jpg" alt="">
+                                </div>
+                                <h5>Alone <br>
+                                    <div>
+                                        <p>Alan Walker</p>
+                                    </div>
+                                </h5>
+                            </div>
+                            <div class="rt-side pe-1 ">
+                                <i class="bi bi-heart"></i>
+                            </div>
+
+                        </li>
+                        <li class="d-flex  justify-content-between align-items-center ps-1 pe-2 mb-3">
+                            <div class="lft-side d-flex align-items-center">
+                                <span class="me-3">01</span>
+                                <div class="songimg me-3 ">
+                                    <img src="images/Playlist/psyco(postmalone).jpg" alt="">
+                                </div>
+                                <h5>Psyco <br>
+                                    <div>
+                                        <p>Post Malones</p>
+                                    </div>
+                                </h5>
+                            </div>
+                            <div class="rt-side pe-1">
+                                <i class="bi bi-heart"></i>
+                            </div>
+
+                        </li>
+
+                        <li class="d-flex  justify-content-between align-items-center ps-1 pe-2 mb-3">
+                            <div class="lft-side d-flex align-items-center">
+                                <span class="me-3">01</span>
+                                <div class="songimg me-3 ">
+                                    <img src="images/Playlist/DaBaby.jpg" alt="">
+                                </div>
+                                <h5>DaBaby<br>
+                                    <div>
+                                        <p>Shake Sumn</p>
+                                    </div>
+                                </h5>
+                            </div>
+                            <div class="rt-side pe-1">
+                                <i class="bi bi-heart"></i>
+                            </div>
+
+                        </li>
+
+                        <li class="d-flex  justify-content-between align-items-center ps-1 pe-2 mb-3">
+                            <div class="lft-side d-flex align-items-center">
+                                <span class="me-3">01</span>
+                                <div class="songimg me-3 ">
+                                    <img src="images/Playlist/shit.png" alt="">
+                                </div>
+                                <h5>Shit <br>
+                                    <div>
+                                        <p>Tate McRae</p>
+                                    </div>
+                                </h5>
+                            </div>
+                            <div class="rt-side pe-1">
+                                <i class="bi bi-heart"></i>
+                            </div>
+
+                        </li>
+
+                        <li class="d-flex  justify-content-between align-items-center ps-1 pe-2 mb-3">
+                            <div class="lft-side d-flex align-items-center">
+                                <span class="me-3">01</span>
+                                <div class="songimg me-3 ">
+                                    <img src="images/Playlist/havana.jpg" alt="">
+                                </div>
+                                <h5>Havana<br>
+                                    <div>
+                                        <p>Camila Cabello</p>
+                                    </div>
+                                </h5>
+                            </div>
+                            <div class="rt-side pe-1">
+                                <i class="bi bi-heart"></i>
+                            </div>
+
+                        </li>
+
+                        
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-section">
+        <div class="container-fluid ps-0 pe-0">
+            <div class="allContents d-flex w-100 h-100 justify-content-between">
+
+                <div class="leftt d-flex justify-content-between align-items-center">
+                    <div class="songPoster d-flex align-items-center">
+                        <div class="immg">
+
+                            <img src="images/justin-beiber.jpg" alt="">
+                        </div>
+                        <span class="ms-2">
+                            <h5>Rock</h5>
+                            <p class="">Justien Beiber</p>
+                        </span>
+                    </div>
+                    <div class="heartIcons d-flex align-items-center">
+                        <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-ban ms-3" style="color: #ffffff;"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="middle d-block">
+                    <div class="allPlaylistIcons d-flex mt-2 justify-content-center">
+                        <i class="fa-solid fa-backward-step" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-play" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-forward-step" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-shuffle" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="songbar d-flex justify-content-center b">
+                        <span>00.00</span>
+                        <input class="w-50" type="range" name="" id="">
+                        <span class="secondspan">03.47</span>
+                    </div>
+                </div>
+
+                <div class="right d-flex align-items-center justify-content-between pe-2">
+                    <i class="non fa-solid fa-list" style="color: #ffffff;"></i>
+                    <div class="volumebar d-flex align-items-center">
+                        <i class="fa-solid fa-volume-high me-1" style="color: #ffffff;"></i>
+                        <input type="range" name="" id="">
+                    </div>
+                    <i class="fa-solid fa-up-right-and-down-left-from-center" style="color: #ffffff;"></i>
+
+                </div>
+
+            </div>
+            
+
+        </div>
+
+    </div>
+   
+    
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function fun(){
+            document.getElementById("frame1").style.display="block";
+            document.getElementById("frame1").classList.add("styl");
+        }
+        function remove(){
+            document.getElementById("frame1").style.display="none";
+            document.getElementById("frame1").classList.remove("styl");
+        }
+        function queueDrop(){
+            document.getElementById("queueframe").style.display="block";
+            document.getElementById("queueframe").classList.add("queueStyl");
+        }
+        function removedrop(){
+            document.getElementById("queueframe").style.display="none";
+            document.getElementById("queueframe").classList.remove("queueStyl");
+        }
+
+
+
+
+
+        // function queueDrop(){
+        //     document.getElementById("queueframe").style.display="block";
+        //     document.getElementsById("queueframe").classList.add("queueStyl");
+        // }
+        
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     
+</body>
+</html>
